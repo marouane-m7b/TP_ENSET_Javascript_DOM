@@ -53,3 +53,16 @@ document.getElementById("ex3").onclick = () => {
       `Votre IMC est de ${imc.toFixed(2)}. Vous êtes en obésité morbide ou massive.`;
   }
 };
+
+function writeValue(value) {
+  const textarea = document.getElementById("ex4_textarea");
+  if (value === "CE") {
+    textarea.value = "";
+  } else if (value === "=") {
+    textarea.value = eval(textarea.value);
+  } else if (value === "pi") {
+    textarea.value += Math.PI;
+  } else {
+    textarea.value += value;
+  }
+}

@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TP JavaScript</title>
     <style>
-        td {
-            padding: 20px;
-            font-size: 20px;
-            background-color: rgb(218, 218, 218);
-            width: 40px;
-            height: 40px;
-            text-align: center;
-        }
-        td.nums {
-            padding: 20px;
-            font-size: 20px;
-            background-color: rgb(244, 244, 244);
-            width: 40px;
-            height: 40px;
-        }
-        td:hover {
-            cursor: pointer;
-            background-color: rgb(186, 186, 186);
-        }
-        textarea {
-            width: 100%;
-            max-width: 568px;
-            height: 50px;
-            font-size: 20px;
-        }
-        
+      td {
+        padding: 20px;
+        font-size: 20px;
+        background-color: rgb(218, 218, 218);
+        width: 40px;
+        height: 40px;
+        text-align: center;
+      }
+      td.nums {
+        padding: 20px;
+        font-size: 20px;
+        background-color: rgb(244, 244, 244);
+        width: 40px;
+        height: 40px;
+      }
+      td:hover {
+        cursor: pointer;
+        background-color: rgb(186, 186, 186);
+      }
+      textarea {
+        width: 100%;
+        max-width: 568px;
+        height: 50px;
+        font-size: 20px;
+      }
     </style>
   </head>
   <body>
@@ -67,51 +66,51 @@
     <textarea id="ex4_textarea"></textarea>
 
     <table>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>(</td>
-            <td>)</td>
-            <td>%</td>
-            <td>CE</td>
-        </tr>
-        <tr>
-            <td>Inv</td>
-            <td>sin</td>
-            <td>ln</td>
-            <td class="nums">7</td>
-            <td class="nums">8</td>
-            <td class="nums">9</td>
-            <td>/</td>
-        </tr>
-        <tr>
-            <td>pi</td>
-            <td>cos</td>
-            <td>log</td>
-            <td class="nums">4</td>
-            <td class="nums">5</td>
-            <td class="nums">6</td>
-            <td>x</td>
-        </tr>
-        <tr>
-            <td>e</td>
-            <td>tan</td>
-            <td>rac</td>
-            <td class="nums">3</td>
-            <td class="nums">2</td>
-            <td class="nums">1</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td>Exp</td>
-            <td>x^2</td>
-            <td>x^</td>
-            <td>.</td>
-            <td class="nums">0</td>
-            <td>=</td>
-            <td>+</td>
-        </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td onclick="writeValue('(')">(</td>
+        <td onclick="writeValue(')')">)</td>
+        <td onclick="writeValue('%')">%</td>
+        <td onclick="writeValue('CE')">CE</td>
+      </tr>
+      <tr>
+        <td onclick="writeValue('Inv')">Inv</td>
+        <td onclick="writeValue('sin')">sin</td>
+        <td onclick="writeValue('ln')">ln</td>
+        <td class="nums" onclick="writeValue('7')">7</td>
+        <td class="nums" onclick="writeValue('8')">8</td>
+        <td class="nums" onclick="writeValue('9')">9</td>
+        <td onclick="writeValue('/')">/</td>
+      </tr>
+      <tr>
+        <td onclick="writeValue('pi')">pi</td>
+        <td onclick="writeValue('cos')">cos</td>
+        <td onclick="writeValue('log')">log</td>
+        <td class="nums" onclick="writeValue('4')">4</td>
+        <td class="nums" onclick="writeValue('5')">5</td>
+        <td class="nums" onclick="writeValue('6')">6</td>
+        <td onclick="writeValue('*')">*</td>
+      </tr>
+      <tr>
+        <td onclick="writeValue('e')">e</td>
+        <td onclick="writeValue('tan')">tan</td>
+        <td onclick="writeValue('rac')">rac</td>
+        <td class="nums" onclick="writeValue('3')">3</td>
+        <td class="nums" onclick="writeValue('2')">2</td>
+        <td class="nums" onclick="writeValue('1')">1</td>
+        <td onclick="writeValue('-')">-</td>
+      </tr>
+      <tr>
+        <td onclick="writeValue('Exp')">Exp</td>
+        <td onclick="writeValue('x^2')">x^2</td>
+        <td onclick="writeValue('x^')">x^</td>
+        <td onclick="writeValue('.')">.</td>
+        <td class="nums" onclick="writeValue('0')">0</td>
+        <td onclick="writeValue('=') ">=</td>
+        <td onclick="writeValue('+') ">+</td>
+      </tr>
     </table>
 
     <script src="script.js"></script>
